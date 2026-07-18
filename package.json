@@ -1,0 +1,22 @@
+{
+  "name": "@buzzradr/ai-hot",
+  "version": "0.1.0",
+  "description": "BuzzRadr AI Pulse — agent skill: query public AI trend signals, no API key.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buzzradr/ai-hot.git"
+  },
+  "license": "MIT",
+  "homepage": "https://buzzradr.com/hot/access",
+  "keywords": [
+    "buzzradr",
+    "ai",
+    "trends",
+    "rss",
+    "skill",
+    "placeholder"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
