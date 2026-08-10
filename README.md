@@ -24,6 +24,42 @@ Once installed, your agent knows how to:
 
 See [SKILL.md](./SKILL.md) for the full instructions the agent receives.
 
+## Example prompts
+
+Once the skill is installed, these just work:
+
+- *"What's hot in AI today? Give me the top 5 with why they're trending."*
+- *"Anything trending about Claude or agents in the last day?"*
+- *"Pull today's AI digest and summarize it in Chinese."*
+- *"Which platforms is the OpenAI story spreading on?"*
+
+Every topic links back to a shareable page: `https://buzzradr.com/hot/{topicId}`.
+
+## Sample output
+
+`GET /api/public/hot/trends?limit=1` returns topics shaped like:
+
+```json
+{
+  "topicId": "ai_topic_2owoz7",
+  "title": "Auto mode is now the default in Claude Code",
+  "reason": "claude.com · HN 37 pts / 5 comments · 2 sources following up · picked up today",
+  "score": 43,
+  "platforms": ["hackernews", "blog"],
+  "trustedSourceCount": 2,
+  "topItems": [{ "title": "...", "url": "...", "platform": "hackernews" }]
+}
+```
+
+## Prefer MCP?
+
+The same radar is exposed as a **remote MCP server** — see
+[buzzradr/mcp](https://github.com/buzzradr/mcp):
+
+```bash
+claude mcp add --transport http buzzradr https://buzzradr.com/api/mcp
+```
+
 ## Prefer raw access?
 
 - **RSS** — `https://buzzradr.com/api/public/hot/rss?vertical=ai`
