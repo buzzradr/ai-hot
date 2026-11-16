@@ -1,5 +1,7 @@
 # @buzzradr/ai-hot
 
+> **⚠️ Paused (November 2026):** BuzzRadr is currently offline. The public API and MCP endpoint at `buzzradr.com` return HTTP 503, so this skill will not work until the service is resumed.
+
 Agent skill for **BuzzRadr AI Pulse** — lets coding agents query BuzzRadr's
 public AI trend radar directly: trending topics with "why trending" signals,
 daily digests, and source health. Public read-only API, no API key.
